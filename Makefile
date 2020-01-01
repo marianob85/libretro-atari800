@@ -2,6 +2,8 @@ TARGET_NAME := atari800
 GIT_VERSION := " $(shell git rev-parse --short HEAD || echo unknown)"
 ifneq ($(GIT_VERSION)," unknown")
 	CFLAGS += -DGIT_VERSION=\"$(GIT_VERSION)\"
+else
+	CFLAGS += -DGIT_VERSION=\"0\"
 endif
 
 SPACE :=

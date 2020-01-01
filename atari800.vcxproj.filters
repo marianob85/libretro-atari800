@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{18e61b8a-a5be-464b-a487-2573400d42b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\libretro">
+      <UniqueIdentifier>{68dd0008-e461-4163-ba2e-424e50ab85db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\libretro\include">
+      <UniqueIdentifier>{02bcc7af-6e24-4b9b-ab81-2ca8cfd536fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\libretro\libretro-common">
+      <UniqueIdentifier>{341a079e-01bf-42bc-b365-68c5e628ac4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\atari800">
+      <UniqueIdentifier>{e9278455-3c7d-4120-8759-2f2a51aee238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\atari800\src">
+      <UniqueIdentifier>{1407776c-c230-41ff-b0b1-acade2ff64dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\atari800\src\sdl">
+      <UniqueIdentifier>{82c0657d-bd4d-485d-a2b3-dc36bbf52dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\atari800\src\win32">
+      <UniqueIdentifier>{ced6bee1-9374-4424-9af3-63d4bee8143a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\atari800\src\gles2">
+      <UniqueIdentifier>{a9531646-4d96-42ec-b2eb-42637ae18577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\atari800\src\atari_ntsc">
+      <UniqueIdentifier>{feefc948-6def-4e60-be52-b184def99a92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="link.T">
+      <Filter>sources</Filter>
+    </None>
+    <None Include="Makefile">
+      <Filter>sources</Filter>
+    </None>
+    <None Include="Makefile.common">
+      <Filter>sources</Filter>
+    </None>
+    <None Include="libretro\font2.i">
+      <Filter>sources\libretro</Filter>
+    </None>
+    <None Include="atari800\src\cpu_m68k.asm">
+      <Filter>sources\atari800\src</Filter>
+    </None>
+    <None Include="atari800\src\cpu_m68k.S">
+      <Filter>sources\atari800\src</Filter>
+    </None>
+    <None Include="atari800\src\vtxsmpls.inc">
+      <Filter>sources\atari800\src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libretro\atari5200_hash.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\config.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\core-log.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\graph.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-core.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\retroscreen.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\vkbd.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\vkbd_def.h">
+      <Filter>sources\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\include\zconf.h">
+      <Filter>sources\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\include\zlib.h">
+      <Filter>sources\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\msvc\stdint.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\apple_compat.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\fnmatch.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\getopt.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\ifaddrs.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\intrinsics.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\msvc.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\posix_string.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\strcasestr.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\strl.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\zconf.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\zlib.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\compat\zutil.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\file\archive_file.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\file\config_file.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\file\config_file_userdata.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\file\file_path.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\file\nbio.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\rthreads\rsemaphore.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\rthreads\rthreads.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\boolean.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\libco.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\libretro.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\retro_common.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\retro_common_api.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\retro_environment.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\retro_inline.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\include\retro_miscellaneous.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\rthreads\gx_pthread.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="libretro\libretro-common\rthreads\psp_pthread.h">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\af80.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\afile.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\akey.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\antic.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\artifact.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\atari.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\binload.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\bit3.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\cartridge.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\cassette.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\cfg.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\colours.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\colours_external.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\colours_ntsc.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\colours_pal.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\compfile.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\cpu.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\crc32.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\cycle_map.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\devices.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\emuos.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\esc.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\filter_ntsc.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\gtia.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\ide.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\ide_internal.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\img_tape.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\input.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\log.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\memory.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\monitor.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\mzpokeysnd.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pal_blending.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pbi.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pbi_bb.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pbi_mio.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pbi_proto80.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pbi_scsi.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pbi_xld.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pcjoy.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pia.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\platform.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pokey.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\pokeysnd.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\rdevice.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\remez.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\rtime.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\screen.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sio.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sndsave.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sound.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\statesav.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sysrom.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\ui.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\ui_basic.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\util.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\videomode.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\voicebox.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\votrax.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\votraxsnd.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\xep80.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\xep80_fonts.h">
+      <Filter>sources\atari800\src</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\msc\config.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\atari_win32.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\joystick.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\keyboard.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\main.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\main_menu.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\render_direct3d.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\render_directdraw.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\render_gdi.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\render_gdiplus.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\win32\screen_win32.h">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sdl\init.h">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sdl\input.h">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sdl\palette.h">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sdl\video.h">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sdl\video_gl.h">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\sdl\video_sw.h">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\atari_ntsc\atari_ntsc.h">
+      <Filter>sources\atari800\src\atari_ntsc</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\atari_ntsc\atari_ntsc_config.h">
+      <Filter>sources\atari800\src\atari_ntsc</Filter>
+    </ClInclude>
+    <ClInclude Include="atari800\src\atari_ntsc\atari_ntsc_impl.h">
+      <Filter>sources\atari800\src\atari_ntsc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libretro\cmdline.c">
+      <Filter>sources\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\core-mapper.c">
+      <Filter>sources\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\graph.c">
+      <Filter>sources\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-core.c">
+      <Filter>sources\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\platform.c">
+      <Filter>sources\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\vkbd.c">
+      <Filter>sources\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\compat\compat_fnmatch.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\compat\compat_getopt.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\compat\compat_ifaddrs.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\compat\compat_posix_string.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\compat\compat_snprintf.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\compat\compat_strcasestr.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\compat\compat_strl.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\nbio\nbio_stdio.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\archive_file.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\archive_file_7z.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\archive_file_zlib.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\config_file.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\config_file_userdata.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\file_path.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\file\retro_dirent.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\aarch64.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\amd64.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\armeabi.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\fiber.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\libco.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\ppc.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\psp2.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\scefiber.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\sjlj.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\ucontext.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\libco\x86.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\rthreads\rsemaphore.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\rthreads\rthreads.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="libretro\libretro-common\rthreads\xenon_sdl_threads.c">
+      <Filter>sources\libretro\libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\af80.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\afile.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\antic.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\artifact.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari_basic.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari_curses.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari_falcon.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari_ps2.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari_rpi.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari_x11.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\binload.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\bit3.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\cartridge.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\cassette.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\cfg.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\colours.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\colours_external.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\colours_ntsc.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\colours_pal.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\compfile.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\cpu.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\crc32.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\cycle_map.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\devices.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\emuos.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\esc.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\filter_ntsc.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\gtia.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\ide.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\img_tape.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\input.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\joycfg.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\log.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\memory.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\mkimg.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\monitor.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\mzpokeysnd.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pal_blending.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pbi.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pbi_bb.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pbi_mio.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pbi_proto80.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pbi_scsi.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pbi_xld.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pia.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pokey.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\pokeysnd.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\rdevice.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\remez.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\rtime.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\screen.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sio.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sndsave.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sound.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sound_falcon.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sound_oss.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\statesav.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sysrom.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\ui.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\ui_basic.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\util.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\videomode.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\voicebox.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\votrax.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\votraxsnd.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\xep80.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\xep80_fonts.c">
+      <Filter>sources\atari800\src</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\atari_win32.c">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\joystick.c">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\keyboard.c">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\main.cpp">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\render_direct3d.cpp">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\render_directdraw.c">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\render_gdi.c">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\render_gdiplus.cpp">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\screen_win32.c">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\win32\sound.c">
+      <Filter>sources\atari800\src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\init.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\input.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\main.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\palette.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\sound.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\video.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\video_gl.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\sdl\video_sw.c">
+      <Filter>sources\atari800\src\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\gles2\video.c">
+      <Filter>sources\atari800\src\gles2</Filter>
+    </ClCompile>
+    <ClCompile Include="atari800\src\atari_ntsc\atari_ntsc.c">
+      <Filter>sources\atari800\src\atari_ntsc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
