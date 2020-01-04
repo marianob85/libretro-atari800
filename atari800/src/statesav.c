@@ -71,7 +71,7 @@
 #include "xep80.h"
 #endif
 
-#define SAVE_VERSION_NUMBER 9 /* Last changed after Atari800 3.1.0 */
+#define SAVE_VERSION_NUMBER 8 /* Last changed after Atari800 3.1.0 */
 
 
 #define GZOPEN(X, Y)     fopen(X, Y)
@@ -82,7 +82,7 @@
 #define gzFile  FILE *
 #define Z_OK    0
 
-gzFile StateFile = NULL;
+static gzFile StateFile = NULL;
 static int nFileError = Z_OK;
 
 
